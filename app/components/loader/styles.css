@@ -1,0 +1,36 @@
+.loader {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.dot {
+  display: inline-block;
+  font-size: 24px;
+  animation: bounce 0.6s infinite;
+}
+
+.dot.one {
+  animation-delay: 0s;
+}
+.dot.two {
+  animation-delay: 0.2s;
+}
+.dot.three {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}

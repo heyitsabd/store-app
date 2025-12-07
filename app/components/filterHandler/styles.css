@@ -1,0 +1,84 @@
+.filter-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.hide-fliter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recommended {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+
+.filter-toggle {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.item-count {
+  font-weight: 600;
+}
+
+hr {
+  color: #ccc;
+}
+
+.dropdown-menu {
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  gap: 0.8rem;
+  width: fit-content;
+  margin-top: -8px;
+  padding: 10px 12px;
+  animation: 0.2s forwards fadeIn;
+  position: absolute;
+  right: 0rem;
+  flex-direction: column;
+  box-shadow: 0px 4px 16px rgba(163, 170, 175, 0.2);
+  z-index: 100;
+}
+
+.dropdown-menu p {
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 18px;
+  right: 0;
+  text-align: end;
+}
+
+.dropdown-menu p:hover {
+  color: #000;
+  font-weight: 600;
+}
+
+.dropdown-menu p.active {
+  font-weight: 600;
+  color: black;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
